@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music WallPapers</title>
+    <!-- <link rel="stylesheet" href="./wallpapers.css"> -->
+</head>
+<body>
+    <div class="container">
+        <h1 id="progressText">Upload and Download WallPapers</h1>
+        <div class="but">
+            <input type="file" id="fileInput" class="menu">
+            <button id="uploadButton">Upload</button>
+            <button id="downloadButton">Download</button>
+            <button id="showButton">Show</button>
+            <button>Back Home</button>
+        </div>
+        <div id="imageContainer">
+            <div id="scrollingBar"></div>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-storage.js"></script>
+    <script src="./firebase.js"></script>
+    <script src="./wallpapers.js"></script>
+</body>
+</html>

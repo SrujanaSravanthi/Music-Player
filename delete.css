@@ -1,0 +1,100 @@
+@keyframes pulse {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+
+body{
+    background-image: url(./Rock_2/pexels-lopsan-2191013.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+#undo{
+    display: none;
+}
+
+.btn{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.btn button{
+    margin-right: 150px;
+    padding: 10px 6px;
+    font: cursive;
+    font-size: 18px;
+    background: linear-gradient(90deg, rgba(82, 46, 7, 0.889) 5%, rgba(196, 173, 90, 0.8) 35%, rgba(178, 30, 144, 0.8) 100%);
+    color: #fff;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.btn button:last-child{
+    margin-right: 0;
+}
+
+.btn button:hover{
+    animation: pulse 1s infinite;
+}
+
+
+.menu{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,0.8) 0%, rgba(104,9,121,0.8) 35%, rgba(0,212,255,0.8) 100%);
+    text-align: center;
+    border-radius: 100px;
+    margin: 40px;
+    font-size: 20px;
+    font-style: italic;
+    font-family:Lucida Sans;
+    color: rgb(255, 236, 236);
+}
+
+.container ul{
+    background: rgba(201, 200, 196, 0.5);
+    padding: 10px;
+    margin: 10px;
+    font: cursive;
+    font-size: 20px;
+    display: none;
+}
+
+.container-li{
+    display: block;
+    margin: 10px;
+    padding:10px;
+    outline: 2px solid black;
+
+}
+
+.container ul:hover{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    transition: text-shadow 0.3s ease;
+    text-shadow: 0 0 8px rgba(253, 253, 253, 0.7);
+    background:linear-gradient(90deg, rgb(62, 209, 55)10%, rgb(82, 186, 205)40%, rgba(255,255,255)70%);
+    cursor: pointer;
+}
+
+.container ul::active{
+    color: black;
+    background-color: crimson;
+}
+
+#heading:hover{
+    transition: text-shadow 0.3s ease;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
+}

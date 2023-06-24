@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="./upload.css">
+    
+</head>
+<body>
+    <div id="app">
+        <div class="background"></div>
+        <div id="head">
+            <h1 id="progressText">Upload and Listen</h1><br><br>
+        </div>
+        <div class="menu-container">
+            <input type="file" id="musicFileInput" class="menu">
+            <button id="uploadButton" class="menu">Upload Music</button>
+            <button id="playButton" class="menu">Play</button>
+            <button id="pauseButton" class="menu">Pause</button>
+            <button class="menu" onclick="homePage()">Back Home</button>
+        </div>
+        <audio id="audioPlayer"></audio>
+    </div>
+
+    <div class="song-image animate">
+        <img src="./Rock/saurabh-gill-38RthwbB3nE-unsplash.jpg" alt="Song Image">
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-storage.js"></script>
+    <script src="./firebase.js"></script>
+    <script src="./upload.js"></script>
+    
+</body>
+</html>

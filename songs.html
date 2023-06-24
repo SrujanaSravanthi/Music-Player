@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Songs</title>
+    <link rel="stylesheet" href="./songs.css">
+</head>
+<body>
+    <div class="scrolling-screens">
+        <div class="screen screen-1">
+            <h1 class="heading">Quality Music for Quality People</h1>
+            <div class="menu-container">
+                <button class="menu" onclick="fetchAndDisplayShuffledSongs()">Shuffle</button>
+                <button class="menu" id="prev-btn">Prev Song</button>
+                <button class="menu" id="next-btn">Next Song</button>
+                <button id="display-songs-btn" class="menu-item">Display Songs</button><br>
+                <button class="menu" onclick="homePage()">Back Home</button>
+            </div>
+            <div class="song">
+                <ul id="song-list"></ul>
+            </div>
+            <div class="countdown-timer"></div>
+        </div>
+        <div class="screen screen-2" id="element">
+            <h1 class="heading">Start Listening Music</h1>
+            <div class="song-controls">
+                <div class="play-pause-icon"></div>
+            </div>
+            <canvas id="visualizer"></canvas>
+        </div>
+    </div>
+
+
+    <!-- Script Tags -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-storage.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+    <script src="./song-menu.js"></script>
+    <script src="./songs.js"></script>
+</body>
+</html>
+
+

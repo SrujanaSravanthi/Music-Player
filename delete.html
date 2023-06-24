@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete</title>
+    <link rel="stylesheet" href="./delete.css">
+</head>
+<body>
+    <div class="container">
+            <div class="menu">
+                <h1 id="heading">Remove the songs you don't like</h1>
+                <h3>Select the song to delete...</h3>
+            </div>
+            <div class="btn">
+                <button id="display-songs-btn">Display Songs</button>
+                <button id="undo">Undo</button>
+                <button onclick="home()">Back Home</button>
+            </div>
+            <ul id="song-list"></ul>
+    </div>
+
+
+    <!-- Script Tags -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-storage.js"></script>
+    <script src="./delete.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+body{
+    background-image: url(./Rock/bruno-cervera-Gi6-m_t_W-E-unsplash.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: top;
+    
+}
+
+#heading{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    font-size: 48px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+#sub-heading{
+    font-family: cursive;
+    text-shadow: 2px 2px 4px rgba(250, 0, 0, 0.5);
+    text-align: center;
+}
+
+.group_menu{
+    text-align: center;
+}
+.menu{
+    padding : 5px 30px;
+    border: 10px 30px;
+    margin-left: 20px;
+    color: rgb(254, 205, 80);
+    font-size: 16px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(104,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+
+.menu :hover{
+    color: rgb(0,0,0);
+    background: #fffffffa;
+    box-shadow: 0 0 5px #ff96ad, 0 0 25px #ff96ad, 0 0 50px #ff96ad, 0 0 50px #090404;
+}
+
+.scrolling-screens {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+  }
+  
+  .screen {
+    height: 100vh;
+    scroll-snap-align: start;
+  }
+  
+  /* Optional styling for each screen */
+  .screen-1 {
+    background-color: #f9f9f9;
+  }
+  
+  .screen-2 {
+    background-color: #e6e6e6;
+  }
+  
+  .screen-3 {
+    background-color: #d3d3d3;
+  }
+  

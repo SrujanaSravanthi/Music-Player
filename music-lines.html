@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./music-lines.css">
+    <title>Music_Lines</title>
+</head>
+<body>
+    <div class="container">
+        <h1 id="progress">GENERATE THE BEST MUSIC LINES</h1>
+        <div class="but">
+            <button id="generate">Generate</button>
+            <button id="upload-line">Upload A Music Line</button>
+            <button onclick="displayMusicLines()">Display All Music Lines</button>
+            <button>Back Home</button>
+        </div>
+        <div class="input">
+            <form id="uploadForm">
+                <input type="text" name="" id="lineInput" placeholder="Enter a music line: ">
+                <button type="submit" id="upload">Upload</button>
+            </form>
+        </div>
+            <ul class="unordered-list"></ul>
+    </div>
+    <script src="./music-lines.js"></script>
+</body>
+</html>

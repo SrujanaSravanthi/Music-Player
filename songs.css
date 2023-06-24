@@ -1,0 +1,172 @@
+@keyframes shining {
+    0%{
+        filter:hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+@keyframes scroll{
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-100vh);
+    }
+}
+
+@keyframes buttonAnimation{
+    0%{
+        background-color: #21e78e;
+        transform: scale(1);
+    }
+    50%{
+        background-color: #f44336;
+        transform: scale(1.1);
+    }
+    100%{
+        background-color: #3f51b5;
+        transform: scale(1);
+    }
+}
+
+
+html,body{
+    margin: 0;
+    padding: 0;
+}
+
+.heading{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+    background-color: rgba(224, 221, 221, 0.5);
+    text-shadow: 5px 2px 2px rgb(158, 151, 151);
+    padding: 30px 20px;
+}
+.heading:hover{
+    text-shadow: 5px 2px 2px rgb(198, 118, 6);
+}
+
+.menu-container{
+    text-align: center;
+}
+
+.scrolling-screens{
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+.screen{
+    height: 100vh;
+    scroll-snap-align:start;
+    position: relative;
+    /*display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.screen-1{
+    background-image: url(./Rock_1/pexels-daniel-reche-3721941.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menu{
+    padding: 20px;
+    border-radius: 20px; 
+    font-family: cursive;
+    font-size: 20px;
+    margin: 20px;
+}
+
+.menu:hover{
+    animation: buttonAnimation 2s infinite;
+}
+
+.menu-item{
+    padding: 20px;
+    border-radius: 20px; 
+    font-family: cursive;
+    font-size: 20px;
+    margin: 20px;
+    animation: buttonAnimation 2s infinite;
+}
+
+.menu-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#song-list{
+    font-family: cursive;
+    color: rgb(6, 1, 6);
+    font-size: 20px;
+    background-color: rgba(224, 221, 221, 0.5);
+    list-style: none;
+}
+
+.song li{
+    border: 20px;
+    margin: 20px;
+}
+
+.song li:hover{
+    color: crimson;
+    background-color: aliceblue;
+    cursor: pointer;
+}
+
+
+
+/* Screen-2 */
+
+.screen-2 {
+    background-image: url(./Rock/danny-howe-bn-D2bCvpik-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+
+.animate{
+    animation: shining 3s infinite;
+    filter: hue-rotate(160deg);
+    filter: contrast(200%);
+    filter: brightness(70%);
+    filter: grayscale(80%);
+    filter: saturate(200%);
+}
+
+.screen-2 .song-controls{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(224, 221, 221, 0.5);
+    border-radius: 50px;
+}
+
+.screen-2 .song-controls .play-pause-icon{
+    display: block;
+    width: 70px;
+    height: 70px;
+    background-image: url(./icon/pause-button.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+
+
+
